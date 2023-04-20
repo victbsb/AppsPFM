@@ -1,0 +1,25 @@
+.jimu-widget-buffer{
+    vertical-align: middle;
+    background-image: url(logo_50trans.png);
+    background-position: top;
+    background-color: rgb(255, 255, 255);
+    background-size: cover;
+    /* color: #335ebd; */
+    border-top-style: groove;
+    border-bottom-style: groove;
+    padding-left: inherit;
+    border-bottom: none;
+}
+
+/* #logo {
+    width: 80%;
+    height: auto;
+    opacity: 0.3;
+} */
+
+
+
+#reset{
+    right: 10px;
+    position: absolute;
+}

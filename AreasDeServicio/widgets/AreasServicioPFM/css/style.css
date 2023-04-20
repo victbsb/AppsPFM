@@ -1,0 +1,37 @@
+
+#reset {
+    position: absolute;
+    right: 10px;
+}
+
+
+/* #div{
+    background-image: url("C:\EsriTraining\WebAppBuilder\client\stemapp\widgets\AreasServicioPFM\images\logo.png");
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+} */
+
+img, svg {
+    opacity: 0.3;
+    vertical-align: middle !important;
+    position: absolute !important;
+}
+
+
+
+.jimu-widget-areasServicio{
+    vertical-align: middle;
+    background-image: url(serviceArea_trans.png);
+    background-position: top;
+    background-color: rgb(255, 255, 255);
+    background-size: cover;
+    border-top-style: groove;
+    /* border-bottom-style: groove; */
+    padding-left: inherit;
+    border-bottom: none;
+}
+
+.jimu-widget-areasServicio jimu-widget firstFocusNode lastFocusNode{
+    border-bottom: none;
+}

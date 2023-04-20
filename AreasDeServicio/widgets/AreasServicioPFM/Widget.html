@@ -1,0 +1,83 @@
+<div id="div" >
+    
+    <h1>Seleccione un servicio para calcular el tiempo de llegada</h1>
+
+    <h2>Seleccione un municipio: </h2>
+    <select name="municipio" data-dojo-attach-point="municipio">
+    <label for="municipio">Seleccione un municipio de la Mancomunidad: </label>
+        <option value="Alcanices" >Alcañices</option>
+        <option value="Figueruela" >Figueruela de Arriba</option>
+        <option value="Fonfria">Fonfría</option>
+        <option value="Gallegos" >Gallegos del Río</option>
+        <option value="Mahide" >Mahide</option>
+        <option value="Rabanales" >Rabanales</option>
+        <option value="Rabano" >Rábano de Aliste</option>
+        <option value="Samir" >Samir de los Caños</option>
+        <option value="SanVicente">San Vicente de la Cabeza</option>
+        <option value="SanVitero">San Vitero</option>
+        <option value="Trabazos">Trabazos</option>
+        <option value="Vinas">Viñas</option>
+    </select>
+    <button data-dojo-attach-event="onclick:villageSelection">Seleccionar municipio</button>
+    
+<br>
+
+<h2>Seleccione el tipo de infraestructura: </h2>
+<select name="infraestructura" data-dojo-attach-point="facilities" data-dojo-attach-event="onchange:capas" >
+<label for="infraestructura">Seleccione una opción de dibujo: </label>
+    <option value="none">Seleccione el tipo de infraestructura:</option>
+    <option value="farmacias">Farmacias</option>
+    <option value="centrosSalud">Centros de salud</option>
+    <option value="centrosEducativos">Centros educativos</option>
+    <option value="guardiaCivil">Guardia Civil</option>
+    <option value="baseAereaIncendios">Base aérea para incendios</option>
+    <option value="bomberos">Bomberos</option>
+    <option value="policia">Policía</option>
+</select>
+
+<br>
+<h2>Seleccione las ventanas de tiempo </h2>
+<select name="time" data-dojo-attach-point="time">
+<label for="time">Seleccione el tiempo de llegada: </label>
+    <option value="none">Defecto: 1, 3 y 5 minutos</option>
+    <option value="1">1 minuto</option>
+    <option value="3">3 minutos</option>
+    <option value="5">5 minutos</option>
+    <option value="10">10 minutos</option>
+    <option value="15">15 minutos</option>
+</select>
+
+<h2>Seleccione el tipo de área de servicio: </h2>
+<select name="area" data-dojo-attach-point="area">
+<label for="area">Seleccione una opción de dibujo: </label>
+    <option value="none">Seleccione el tipo de servicio</option>
+    <option value="WalkTime">Tiempo a pie</option>
+    <option value="TravelTime">Tiempo en coche</option>
+</select>
+    <button data-dojo-attach-event="onclick:calculate">Calcular áreas</button>
+    <br>
+    <div id="reset">
+        <label for="reestablecer">Borrar áreas de servicio</label>
+        <button name="reestablecer"data-dojo-attach-event="onclick:reset">Reset</button>
+    </div>
+<br>
+
+
+
+    <!-- <select name="select1" id="" data-dojo-attach-event="onchange:selectTipoImpedancia" data-dojo-attach-point="selectorImpedancia">
+        <option value="tiempo">Tiempo (min)</option>
+        <option value="distancia">Distancia (km)</option>
+    </select> -->
+    <!-- <form id="" data-dojo-attach-event="onchange:selectDistancia" data-dojo-attach-point="selector">
+        <option value="1">1</option>
+        <option value="3">3</option>
+        <option value="5">5</option>
+        <option value="10">10</option>
+        <option value="15">15</option>
+    </form> -->
+    <hr>
+    <!-- <button data-dojo-attach-event="onclick:calcularFarmacias">Farmacias</button>
+    <button data-dojo-attach-event="onclick:calcularCentrosEducativos">Centros educativos</button>
+    <button data-dojo-attach-event="onclick:calcularCentrosDeSalud">Centros de salud</button> -->
+    <!-- <img src="widgets/AreasServicioPFM/images/logo.png" id="logo" alt=""> -->
+</div>

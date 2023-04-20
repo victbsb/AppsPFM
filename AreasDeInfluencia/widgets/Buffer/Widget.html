@@ -1,0 +1,55 @@
+<div>
+    <h1>Calculadora del área de influencia para la ubicación de nuevos contenedores</h1>
+    <br>
+   
+    <select name="municipio" data-dojo-attach-point="municipio">
+    <label for="municipio">Seleccione un municipio de la Mancomunidad: </label>
+        <option value="Alcanices" >Alcañices</option>
+        <option value="Figueruela" >Figueruela de Arriba</option>
+        <option value="Fonfria">Fonfría</option>
+        <option value="Gallegos" >Gallegos del Río</option>
+        <option value="Mahide" >Mahide</option>
+        <option value="Rabanales" >Rabanales</option>
+        <option value="Rabano" >Rábano de Aliste</option>
+        <option value="Samir" >Samir de los Caños</option>
+        <option value="SanVicente">San Vicente de la Cabeza</option>
+        <option value="SanVitero">San Vitero</option>
+        <option value="Trabazos">Trabazos</option>
+        <option value="Vinas">Viñas</option>
+    </select>
+    <button data-dojo-attach-event="onclick:villageSelection">Seleccionar municipio</button>
+    <br>
+    <h2>Seleccione la distancia de influencia</h2>
+    <select name="distancia" data-dojo-attach-point="distancia">
+        <label for="distancia">Seleccione una distancia de influencia: </label>
+            <option value="none">Distancia (m)</option>
+            <option value="100">100</option>
+            <option value="150">150</option>
+            <option value="200">200</option>
+            <option value="250">250</option>
+        </select>
+    <br>
+    <h2>Seleccione el tipo de nuevo contenedor</h2>
+    <select name="tipoCont" data-dojo-attach-point="tipoCont">
+        <label for="tipoCont">Seleccione el contenedor a añadir: </label>
+            <option value="resto">Resto</option>
+            <option value="envases">Envases</option>
+            <option value="papel">Papel</option>
+            <option value="vidrio">Vidrio</option>
+        </select>
+        <h2>Seleccione la naturaleza del contenedor</h2>
+        <select name="tiempo" data-dojo-attach-point="tiempoCont">
+            <label for="tiempo">Seleccione el contenedor a añadir: </label>
+                <option value="permanente">Permanente</option>
+                <option value="estacional">Estacional</option>
+            </select>
+    <br><br>
+    <button data-dojo-attach-event="onclick:calcular">Dibujar contenedor</button>
+    <button data-dojo-attach-event="onclick:enviar">Enviar propuestas de contenedores</button>
+    
+    <div id="reset">
+        <label for="reset">Borrar áreas de influencia</label>
+        <button name="reset"data-dojo-attach-event="onclick:reset">Reset</button>
+    </div>
+    
+</div>

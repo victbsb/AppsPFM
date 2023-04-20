@@ -1,0 +1,25 @@
+{
+  "name": "AreasServicioPFM",
+  "label": "Áreas de servicio",
+  "2D": true,
+  "3D": false,
+  "platform": "HTML",
+  "version": "2.26",
+  "wabVersion": "2.26",
+  "author": "Rural-Turn",
+  "description": "Widget para la creación de áreas de servicio en torno a las infraestructuras de la Mancomunidad de Tierras de Aliste en Zamora",
+  "copyright": "",
+  "license": "http://www.apache.org/licenses/LICENSE-2.0",
+  "properties": {
+		"inPanel":true,
+		"hasLocale": true,
+		"hasStyle":true,
+		"hasConfig":false,
+		"hasUIFile":true,
+		"hasSettingPage":false,
+		"hasSettingUIFile":false,
+		"hasSettingLocale":false,
+		"hasSettingStyle":false,
+		"IsController":false
+  }
+}
