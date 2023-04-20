@@ -327,7 +327,9 @@
   "isWebTier": false,
   "httpProxy": {
     "useProxy": true,
-    "url": "https://laptop-k633l5s5:3344/proxy.js"
+    "alwaysUseProxy": false,
+    "url": "",
+    "rules": []
   },
   "dataSource": {
     "dataSources": {},
